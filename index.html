@@ -7,12 +7,13 @@
 <style>
 body {
   margin: 0;
+  padding:0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .topnav {
   overflow: hidden;
-  background-color: #5d596d;
+  background-color: #2f5c91;
 }
 
 .topnav a {
@@ -32,7 +33,7 @@ body {
 }
 
 .topnav a.active {
-  background-color: #5d596d;
+  background-color: #2f5c91;
   color: white;
   font-weight:bold;
 }
@@ -41,6 +42,23 @@ body {
   display: none;
 }
 
+  .footerdesign{
+    width:90%;
+    text-align:left;
+  }
+  
+  .footerlink{
+    color:black;
+    text-decoration:none;
+    color:#2c2a37;
+    font-size:1.5em;
+    letter-spacing:-2px;
+    width:100%;
+  }
+  
+  .footerlink:hover{
+    opacity:0.5;
+  }
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -67,11 +85,11 @@ body {
 <body>
 
 <div class="topnav" id="myTopnav">
-  <a href="#home" class="active">FUNNYBESTMEMES.COM</a>
-  <a href="#news">Gaming Memes</a>
-  <a href="#about">Dog Memes</a>
-  <a href="#about">Cat Memes</a>
-  <a href="#about">Work Memes</a>
+  <a href="/" class="active">FUNNYBESTMEMES.COM</a>
+  <a href="/gaming-memes">Gaming Memes</a>
+  <a href="/dog-memes">Dog Memes</a>
+  <a href="/cat-memes">Cat Memes</a>
+  <a href="/work-memes">Work Memes</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
   </a>
@@ -79,7 +97,7 @@ body {
 
 <div style="padding-left:50px">
 </div>
-
+  <div style="height:500px;"></div>
 <script>
 function myFunction() {
   var x = document.getElementById("myTopnav");
@@ -92,4 +110,19 @@ function myFunction() {
 </script>
 
 </body>
+  <center>
+  <div class="footerdesign">
+    
+    <a style="text-decoration:none;" href="/" ><h3 class="footerlink">FUNNYBESTMEMES.COM</h3></a>
+    
+  <a class="footerlink" href="/gaming-memes">Gaming Memes</a>
+      <br><br>
+  <a  class="footerlink"href="/dog-memes">Dog Memes</a>
+      <br><br>
+  <a  class="footerlink"href="/cat-memes">Cat Memes</a>
+      <br><br>
+  <a  class="footerlink" href="/work-memes">Work Memes</a>
+  </div>
+  </center>
+  <br><br><br>
 </html>
