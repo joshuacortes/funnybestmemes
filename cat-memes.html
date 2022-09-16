@@ -14,6 +14,9 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #2f5c91;
+  position:fixed;
+  top:0;
+  width:100%;
 }
 
 .topnav a {
@@ -59,7 +62,7 @@ body {
   .footerlink:hover{
     opacity:0.5;
   }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -67,7 +70,7 @@ body {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
